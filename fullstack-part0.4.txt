@@ -1,0 +1,32 @@
+browser-> server : GEThttps://studies.cs.helsinki.fi/exampleapp/notes
+server-->browser : HTML-code
+browser-> server : GEThttps://studies.cs.helsinki.fi/exampleapp/main.css
+server-->browser : main.css
+browser-> server : GEThttps://studies.cs.helsinki.fi/exampleapp/main.js
+server-->browser : main.js
+browser-> server : https://studies.cs.helsinki.fi/favicon.ico
+server-->browser : favicon.ico
+
+
+note over browser:
+
+browser creates a content-type: text/html named 'new_note'
+executes js code requestinq data. 
+end note
+
+browser-> server : POSThttps://studies.cs.helsinki.fi/exampleapp/new_note.
+server-->browser : HTML-code
+browser-> server : GEThttps://studies.cs.helsinki.fi/exampleapp/notes
+server-->browser : HTML-code
+browser-> server : GEThttps://studies.cs.helsinki.fi/exampleapp/main.css
+server-->browser : main.css
+browser-> server : GEThttps://studies.cs.helsinki.fi/exampleapp/main.js
+server-->browser : main.js
+browser-> server : https://studies.cs.helsinki.fi/favicon.ico
+server-->browser : favicon.ico
+
+note over browser:
+
+browser renders the new note created displaying it in the client side
+
+end note
